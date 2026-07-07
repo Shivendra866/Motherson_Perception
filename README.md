@@ -123,3 +123,26 @@ Motherson_Perception/
 └── 📁 docs/                     # Documentation
     ├── architecture.md
     └── api_reference.md
+
+<details> <summary><b>Click to expand requirements</b></summary>
+OS: Ubuntu 22.04 / Windows 11 / macOS 12+
+
+Python: 3.10 or higher
+
+Hardware:
+
+Intel RealSense camera (D455/D435 recommended)
+
+CUDA-enabled GPU (NVIDIA RTX 2060+)
+
+8GB+ RAM
+
+Software:
+
+librealsense SDK
+
+CUDA Toolkit 11.8+
+
+cuDNN 8.0+
+
+</details>
