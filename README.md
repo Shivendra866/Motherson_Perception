@@ -83,3 +83,14 @@
 ---
 
 ## 📁 Project Structure
+Motherson_Perception/
+│
+├── 📄 app.py # Main application entry point
+├── 📄 dome_seg.py # Dome segmentation script
+├── 📄 TailLamp_seg.py # Tail lamp segmentation script
+├── 🧠 dome_seg.pth # Trained dome RF-DETR model
+├── 🧠 TailLamp_seg.pth # Trained tail lamp RF-DETR model
+├── 📦 requirements.txt # Python dependencies
+├── 📖 README.md # This file
+└── 📁 models/ # Additional model files
+└── ...
