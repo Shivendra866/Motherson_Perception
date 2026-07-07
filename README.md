@@ -118,26 +118,26 @@ cuDNN 8.0+
 
 🚀 Step-by-Step Setup
 bash
-# 1. Clone the repository
+### 1. Clone the repository
 git clone https://github.com/your-username/Motherson_Perception.git
 cd Motherson_Perception
 
-# 2. Create virtual environment
+### 2. Create virtual environment
 python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# 3. Install dependencies
+### 3. Install dependencies
 pip install -r requirements.txt
 
-# 4. Install Intel RealSense SDK
-# Ubuntu/Debian:
+### 4. Install Intel RealSense SDK
+### Ubuntu/Debian:
 sudo apt-get update
 sudo apt-get install librealsense2-dev librealsense2-dkms
 
-# 5. Verify installation
+### 5. Verify installation
 realsense-viewer
 </details>
-
+<br>
 
 ## 📁 Project Structure
 
