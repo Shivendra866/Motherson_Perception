@@ -92,52 +92,6 @@
 </div>
 
 ---
-## 🛠️ Installation
-## 📋 Prerequisites
-<details> <summary><b>Click to expand requirements</b></summary>
-OS: Ubuntu 22.04 / Windows 11 / macOS 12+
-
-Python: 3.10 or higher
-
-Hardware:
-
-Intel RealSense camera (D455/D435 recommended)
-
-CUDA-enabled GPU (NVIDIA RTX 2060+)
-
-8GB+ RAM
-
-Software:
-
-librealsense SDK
-
-CUDA Toolkit 11.8+
-
-cuDNN 8.0+
-
-
-🚀 Step-by-Step Setup
-bash
-### 1. Clone the repository
-git clone https://github.com/your-username/Motherson_Perception.git
-cd Motherson_Perception
-
-### 2. Create virtual environment
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-### 3. Install dependencies
-pip install -r requirements.txt
-
-### 4. Install Intel RealSense SDK
-### Ubuntu/Debian:
-sudo apt-get update
-sudo apt-get install librealsense2-dev librealsense2-dkms
-
-### 5. Verify installation
-realsense-viewer
-</details>
-<br>
 
 ## 📁 Project Structure
 
@@ -169,3 +123,80 @@ Motherson_Perception/
 └── 📁 docs/                     # Documentation
     ├── architecture.md
     └── api_reference.md
+```
+## 🛠️ Installation
+## 📋 Prerequisites
+<details> <summary><b>Click to expand requirements</b></summary>
+OS: Ubuntu 22.04 / Windows 11 / macOS 12+
+
+Python: 3.10 or higher
+
+Hardware:
+
+Intel RealSense camera (D455/D435 recommended)
+
+CUDA-enabled GPU (NVIDIA RTX 2060+)
+
+8GB+ RAM
+
+Software:
+
+librealsense SDK
+
+CUDA Toolkit 11.8+
+
+cuDNN 8.0+
+
+
+##🚀 Step-by-Step Setup
+bash
+### 1. Clone the repository
+git clone https://github.com/your-username/Motherson_Perception.git
+cd Motherson_Perception
+
+### 2. Create virtual environment
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+### 3. Install dependencies
+pip install -r requirements.txt
+
+### 4. Install Intel RealSense SDK
+### Ubuntu/Debian:
+sudo apt-get update
+sudo apt-get install librealsense2-dev librealsense2-dkms
+
+### 5. Verify installation
+realsense-viewer
+</details>
+<br>
+
+## Troubleshooting
+<details> <summary><b>RealSense SDK Issues</b></summary>
+bash
+### Build from source if package not available
+git clone https://github.com/IntelRealSense/librealsense.git
+cd librealsense
+./scripts/setup_udev_rules.sh
+mkdir build && cd build
+cmake .. -DBUILD_EXAMPLES=true -DCMAKE_BUILD_TYPE=Release
+make && sudo make install
+</details><details> <summary><b>CUDA Issues</b></summary>
+bash
+### Check CUDA version
+nvcc --version
+
+### Install CUDA if missing
+wget https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/cuda_11.8.0_520.61.05_linux.run
+sudo sh cuda_11.8.0_520.61.05_linux.run
+</details>
+
+## 🚀 Quick Start
+Running the Application
+bash
+### Run main application
+python app.py
+
+### Run specific segmentation
+python TailLamp_seg.py
+python dome_seg.py
