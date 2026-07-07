@@ -124,6 +124,7 @@ Motherson_Perception/
     ├── architecture.md
     └── api_reference.md
 
+## 📁 Project Structure
 <details> <summary><b>Click to expand requirements</b></summary>
 OS: Ubuntu 22.04 / Windows 11 / macOS 12+
 
