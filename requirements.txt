@@ -1,0 +1,8 @@
+numpy
+opencv-python
+pyrealsense2
+torch
+torchvision
+rfdetr
+Pillow
+scipy
