@@ -115,7 +115,7 @@ CUDA Toolkit 11.8+
 
 cuDNN 8.0+
 
-</details>
+
 🚀 Step-by-Step Setup
 bash
 # 1. Clone the repository
@@ -136,6 +136,7 @@ sudo apt-get install librealsense2-dev librealsense2-dkms
 
 # 5. Verify installation
 realsense-viewer
+</details>
 
 
 ## 📁 Project Structure
