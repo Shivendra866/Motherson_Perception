@@ -149,7 +149,6 @@ cuDNN 8.0+
 
 
 ##🚀 Step-by-Step Setup
-bash
 ### 1. Clone the repository
 git clone https://github.com/your-username/Motherson_Perception.git
 cd Motherson_Perception
@@ -173,7 +172,6 @@ realsense-viewer
 
 ## Troubleshooting
 <details> <summary><b>RealSense SDK Issues</b></summary>
-bash
 ### Build from source if package not available
 git clone https://github.com/IntelRealSense/librealsense.git
 cd librealsense
@@ -182,7 +180,6 @@ mkdir build && cd build
 cmake .. -DBUILD_EXAMPLES=true -DCMAKE_BUILD_TYPE=Release
 make && sudo make install
 </details><details> <summary><b>CUDA Issues</b></summary>
-bash
 ### Check CUDA version
 nvcc --version
 
@@ -193,7 +190,6 @@ sudo sh cuda_11.8.0_520.61.05_linux.run
 
 ## 🚀 Quick Start
 Running the Application
-bash
 ### Run main application
 python app.py
 
